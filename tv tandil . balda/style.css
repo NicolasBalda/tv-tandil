@@ -1,0 +1,109 @@
+
+body {
+    padding-top: 20px;
+    
+    background-image: url(./familia.jpg);
+    background-size: cover;
+  }
+  
+  .grid-1 {
+    display: grid;
+    width: 100%;
+    max-width: 770px;
+    margin: 0 auto;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px auto 80px;
+    grid-gap: 20px;
+    
+    grid-template-areas: "header   header   header"
+                         "main     main     sidebar"
+                         "footer   footer   footer";
+  }
+  
+ 
+  
+  .grid-1 div {
+    color: rgb(44, 31, 31);
+    font-size:15px;
+    padding: 20px;
+    }
+  
+
+  
+  .item-1 {
+    
+    /* background-image: url(./tvtandil.jpg); */
+    background-size: cover;
+      display: block;
+    margin: 0px auto;
+    grid-area: header header;
+    margin:10px;
+  }
+  .item-2 {
+    /* background: #33a8a5; */
+    grid-area: main;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    
+    grid-template-areas: "header header"
+                         "article sidebar";
+    
+  }
+  .item-3 {
+    background-image: url(./ANTENA.jfif);
+    grid-area: sidebar;
+    background-size: cover;
+  }
+  .item-4 {
+    height: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    background-color: red;
+    color: rgb(217, 231, 24);
+     text-align: center; 
+     font-family: Arial;
+    
+  }
+  .item-5 {
+    background-image: url(./tecnico.jfif);
+    
+    grid-area: header;
+  }
+  .item-6 {
+    background-image: url(./R.jfif);
+    background-size: contain;
+    grid-area: article;
+  }
+  .item-7 {
+    background-image: url(./antena.png);
+    background-size: cover;
+    grid-area: sidebar;
+  }
+  P{
+    color: black;
+      font-weight: bold;
+    }
+  .item-10 {
+    background-image: url(./vision.jpeg);
+    background-size: cover;
+  }
+  .item-9 {
+    background-image: url(./descarga.jfif);
+  background-size: contain;
+  }
+  .item-8 {
+background-color: beige;
+
+  }
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
